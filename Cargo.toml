@@ -25,21 +25,19 @@ opt-level = 3
 
 [dependencies]
 
-egui = ">=0.24, <0.26"
-skia-safe = { version = "0.69", features = [] }
-egui-winit = { version = "0.25", optional = true, default-features = false }
+egui = "0.27"
+skia-safe = { version = "0.75", features = [] }
+egui-winit = { version = "0.27", optional = true, default-features = false }
 
 skulpin = { version = "0.14.1", features = [], optional = true}
 
 [dev-dependencies]
 softbuffer = { git = "https://github.com/john01dav/softbuffer" }
-egui_demo_lib = "0.24"
-raw-window-handle = "0.5"
-foreign-types-shared = "0.1.1"
+egui_demo_lib = "0.27"
 
-sdl2 = { version = "0.35.2", features = ["raw-window-handle"] }
-gl = "0.14.0"
-egui-sdl2-event = { version = "0.4.0", package = "egui-skia-sdl2-event" }
+# sdl2 = { version = "0.35.2", features = ["raw-window-handle"] }
+# gl = "0.14.0"
+# egui-sdl2-event = { version = "0.4.0", package = "egui-skia-sdl2-event" }
 
 [target.'cfg(target_os = "macos")'.dev-dependencies]
 metal = "0.24"
