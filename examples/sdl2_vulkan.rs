@@ -1,10 +1,9 @@
 // This example shows how to use the renderer with SDL2 directly.
 
-use egui_sdl2_event::DpiMode;
 
 #[cfg(feature = "vulkan")]
 fn main() {
-    use egui_sdl2_event::EguiSDL2State;
+    use egui_sdl2_event::{DpiMode, EguiSDL2State};
     use sdl2::event::Event;
     use sdl2::keyboard::Keycode;
     use skia_safe::Color;
